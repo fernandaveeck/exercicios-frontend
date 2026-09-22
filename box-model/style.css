@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(252, 227, 255);
+    /* background-image: url(images/pink-7761356_1280.png); */
+    background-size: cover;
+    height: 100vh;
+}
+
+div {
+    background-image: url(images/HQ8Pp6_W4AAgKgc.webp);
+    background-size: cover;
+
+    text-align: center;
+
+    margin: auto;
+    margin-top: 50px;
+
+    border: 10px;
+    border-style: double;
+    border-radius: 50%;
+    border-color: rgb(255, 194, 227);
+
+    width: 520px;
+    height: 520px;
+
+    align-content: center;
+    font-size: 69px;
+    color: rgb(255, 194, 227);
+
+}
+

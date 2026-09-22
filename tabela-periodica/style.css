@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h3 {
+    margin: 0;
+    font-size: 29px;
+}
+
+
+h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+h5 {
+    margin-left: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+
+h6 {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+.vazio {
+    border: 0px solid rgb(255, 255, 255);;
+    background-color: white;
+}
+
+
+.rosa {
+    background-color: #ff91cf;
+    border: 3px solid rgb(56, 56, 56);    
+}
+
+.rosaclaro {
+    background-color: #ffc8ec;
+    border: 3px solid rgb(56, 56, 56);  
+}
+
+
+.ligthblue {
+    background-color: #b5f4fc;
+    border: 3px solid rgb(56, 56, 56);  
+}
+
+
+.purple {
+    background-color: #e9a1ff;
+    border: 3px solid rgb(56, 56, 56);
+}
+
+
+.ligthgreen {
+    background-color: #a5fac4;
+    border: 3px solid rgb(56, 56, 56);    
+}
+
+
+.yellow {
+    background-color: #f5f599;
+    border: 3px solid rgb(56, 56, 56);  
+}
+
+
+.pink {
+    background-color: #ff228d;
+    border: 3px solid rgb(56, 56, 56);  
+}
+
+
+.cinza {
+    background-color: #8d55e2;
+    border: 3px solid rgb(56, 56, 56);
+}
+.ciano {
+    background-color: #5fdbe4;
+    border: 3px solid rgb(56, 56, 56);  
+}
+
+
+.roxo {
+    background-color: #57f885;
+    border: 3px solid rgb(56, 56, 56);    
+}
