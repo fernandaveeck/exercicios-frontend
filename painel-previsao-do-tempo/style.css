@@ -1,0 +1,81 @@
+#painel {
+    border: 1px solid black;
+    width: 666px;
+    height: 556px;
+    font-family: monospace;
+    color: white;
+    margin: auto;
+    
+}
+
+.cabecalho {
+    border: 1px solid black;
+    width: auto;
+    height: 130px;
+    background-color: rgb(40, 7, 160);
+
+}
+
+h1 {
+
+}
+
+p {
+
+    text-align: end ;
+    padding-right: 10px;
+
+}
+
+.tamanho {
+    width: 220px;
+    height: 210px;
+
+}
+
+.temperatura {
+    display: inline-block;
+    border: 1px solid black;
+
+    background-color: rgb(104, 195, 255);
+    margin-right: -7px;
+}
+
+.umidade {
+    display: inline-block;
+    border: 1px solid black;
+    background-color:   rgb(61, 189, 44);
+    margin-right: -7px;
+}
+
+.vento {
+    display: inline-block;
+    border: 1px solid black;
+
+    background-color:   rgb(171, 82, 255);
+    margin-right: -7px;
+}
+
+.condicao {
+    display: inline-block;
+    border: 1px solid black;
+
+    background-color: rgb(255, 182, 73);
+    margin-right: -7px;
+}
+
+.amanha {
+    display: inline-block;
+    border: 1px solid black;
+
+    background-color: rgb(65, 242, 255);
+    margin-right: -7px;
+}
+
+.localizacao {
+    display: inline-block;
+    border: 1px solid black;
+
+    background-color: rgb(255, 142, 236);
+    margin-right: -7px;
+}   
