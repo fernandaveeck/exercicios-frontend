@@ -1,0 +1,24 @@
+.hero{
+   height: 100vh;
+
+   background-image: url(https://wallpapercat.com/w/full/b/8/f/38739-2560x1600-desktop-hd-olivia-rodrigo-wallpaper-photo.jpg);
+
+   background-size: cover;
+   background-position: center;
+
+   position: relative;
+}
+
+.hero::before{
+   content: "";
+
+   position: absolute;
+   inset: 0;
+
+   background-color: rgba(0,0,0,0.5);
+}
+
+.hero .container{
+   position: relative;
+   z-index: 1;
+}
