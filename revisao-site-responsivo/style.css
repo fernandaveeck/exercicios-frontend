@@ -1,0 +1,33 @@
+nav {
+    color: #C9C4C0;
+    background-color: #445C4C;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    height: 25vh;
+}
+
+nav a,
+nav a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pages {
+    display: flex;
+    width: 35%;
+    height: 25vh;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.logo {
+    width: 20%;
+    height: 25vh;
+}
+
+.book {
+    width: 20%;
+    height: 25vh;
+}
