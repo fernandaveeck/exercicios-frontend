@@ -1,7 +1,7 @@
 :root {
     --primary-blue: #0484c4;
-    --dark-blue: #2f5aae;
-    --accent-cyan: #00b4e4;
+    --dark-blue: #205AF5;
+    --accent-cyan: #6CD4FC;
     --text-dark: #272626;
     --whatsapp-green: #25d366;
     --header-height: 70px;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
@@ -172,27 +172,26 @@ body {
 .logo-link {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px;          
     text-decoration: none;
     z-index: 1001;
 }
 
 .logo-icon {
-    height: 95px;
+    height: 32px;       
+    width: auto;
+    display: block;
+}
+
+.logo-img {
+    height: 28px;      
     width: auto;
     display: block;
 }
 
 .logo-text {
-  color: #fff;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 1.45rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1;
+    display: none;
 }
-
 /* Nav toggle (hamburger) - pure CSS */
 .nav-toggle {
     display: none;
@@ -218,15 +217,15 @@ body {
 }
 
 /* Hamburger animation to X */
-.nav-toggle:checked+.nav-toggle-label span:nth-child(1) {
+.nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
     transform: translateY(8.5px) rotate(45deg);
 }
 
-.nav-toggle:checked+.nav-toggle-label span:nth-child(2) {
+.nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
     opacity: 0;
 }
 
-.nav-toggle:checked+.nav-toggle-label span:nth-child(3) {
+.nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
     transform: translateY(-8.5px) rotate(-45deg);
 }
 
@@ -294,7 +293,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+    font-size: clamp(1.9rem, 4.2vw, 2.8rem);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 12px;
@@ -340,9 +339,11 @@ body {
     position: relative;
     height: 40vh;
     min-height: 300px;
+    padding: 1rem;
     background: url(images/banner-new.png) center/cover no-repeat;
     display: flex;
     align-items: center;
+    margin: 50px 0px;
 }
 
 .section-overlay {
@@ -375,9 +376,9 @@ body {
 
 /* ========== INTRO ========== */
 .intro-section {
-    padding: 50px 0;
+    padding: 50px 0px 0px 0px;
     background: #fff;
-    text-align:left;
+    text-align: left;
 }
 
 .intro-section p {
@@ -398,8 +399,8 @@ body {
 }
 
 .cta-bar h2 {
-    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
-    font-weight: 500;
+    font-size: clamp(2rem, 2.5vw, 1.6rem);
+    font-weight: 150;
     margin: 0;
     line-height: 1.4;
 }
@@ -408,9 +409,9 @@ body {
     background: var(--dark-blue);
     color: #fff;
     border: none;
-    padding: 13px 30px;
-    font-size: 1.05rem;
-    font-weight: 600;
+    padding: 8px 85px;
+    font-size: 26px;
+    font-weight: 300;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
@@ -612,7 +613,7 @@ body {
 /* Posicionamento da imagem */
 .tech-visual {
     position: absolute;
-    z-index:3;
+    z-index: 3;
 
     /* Sobe a imagem */
     top: 20%;
@@ -974,10 +975,12 @@ textarea.form-control-custom {
     color: #bbb;
 }
 
+/* Ícones sociais em coluna vertical */
 .social-icons {
     display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;   /* ← vertical */
+    gap: 14px;
+    align-items: flex-start;
 }
 
 .social-icons a {
@@ -990,29 +993,39 @@ textarea.form-control-custom {
 
 .social-icons a:hover {
     color: var(--accent-cyan);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
+/* Logo do footer: ícone em cima + texto embaixo */
 .footer-brand {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-end;
+    flex-direction: column;   /* ← empilha verticalmente */
+    align-items: center;      /* centraliza horizontalmente */
+    gap: 8px;
+    justify-content: flex-start;
 }
 
 .footer-logo-icon {
-    height: 38px;
+    height: 42px;
     width: auto;
+    display: block;
 }
 
 .footer-logo-text {
-  color: #fff;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1;
+    color: #fff;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* Se estiver usando a imagem do texto em vez do span */
+.footer-logo-img {
+    height: 22px;
+    width: auto;
+    display: block;
 }
 
 .footer-cnpj {
@@ -1022,6 +1035,31 @@ textarea.form-control-custom {
     margin-top: 36px;
     padding-top: 20px;
     border-top: 1px solid #222;
+}
+
+/* ========== WHATSAPP FLOAT ========== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    color: #fff;
 }
 
 
