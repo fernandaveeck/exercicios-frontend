@@ -1,0 +1,57 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples de Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input,
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Calculadora de Idade</h1>
+        <input type="number" id="anoNascimento" placeholder="Digite seu ano de nascimento">
+        <br>
+
+
+        <button onclick="calcularIdade()">Calcular Idade</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcularIdade() {
+            let anoAtual = 2026
+            let idade = Number(document.getElementById("anoNascimento").value)
+            resultado = anoAtual - idade
+
+            alert(resultado)
+        }
+    </script>
+
+</body>
